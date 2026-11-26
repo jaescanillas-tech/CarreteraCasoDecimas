@@ -26,12 +26,15 @@
             <artifactId>javafx-fxml</artifactId>
             <version>${javafx.version}</version>
         </dependency>
-
         <!-- ==========================================================
              EA3: agrega aquí la dependencia del conector JDBC del
              motor de base de datos que utilices (MySQL u Oracle).
              ========================================================== -->
-
+        <dependency>
+            <groupId>com.oracle.database.jdbc</groupId>
+            <artifactId>ojdbc11</artifactId>
+            <version>23.6.0.24.10</version>
+        </dependency>
     </dependencies>
 
     <build>

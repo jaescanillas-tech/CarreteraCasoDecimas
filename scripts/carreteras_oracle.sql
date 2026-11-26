@@ -57,3 +57,5 @@ CREATE TABLE carretera (
 INSERT INTO tipo_carretera (id_tipo, descripcion) VALUES (1, 'Concesionada');
 INSERT INTO tipo_carretera (id_tipo, descripcion) VALUES (2, 'Estatal');
 COMMIT;
+
+SELECT * FROM carretera;

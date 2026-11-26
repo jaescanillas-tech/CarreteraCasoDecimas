@@ -1,6 +1,7 @@
 package cl.duoc.carreteras.controller;
 
 import cl.duoc.carreteras.dao.CarreteraDAO;
+import cl.duoc.carreteras.dao.MySQLCarreteraDAO;
 import cl.duoc.carreteras.dao.PersistenciaException;
 import cl.duoc.carreteras.model.Carretera;
 import cl.duoc.carreteras.model.CarreteraConcesionada;
@@ -31,8 +32,7 @@ public class MainController {
     //      (por ejemplo: = new MiImplementacionDAO();).
     //      No es necesario modificar ninguna otra parte de esta clase.
     // =====================================================================
-    private final CarreteraDAO dao = null;
-
+    private final CarreteraDAO dao = new MySQLCarreteraDAO();
     private static final Locale LOCALE_CL = Locale.forLanguageTag("es-CL");
 
     @FXML private ComboBox<String> cbTipo;
