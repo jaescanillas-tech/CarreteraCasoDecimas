@@ -67,7 +67,7 @@ public class MySQLCarreteraDAO implements CarreteraDAO {
             }
             ps.executeUpdate();
         } catch (SQLException e) {
-            throw new PersistenciaException("Error al insertar carretera: " + e.getMessage(), e);
+            throw new PersistenciaException("Error al actualizar carretera: " + e.getMessage(), e);
         }
     }
 
